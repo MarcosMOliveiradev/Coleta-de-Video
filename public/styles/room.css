@@ -1,0 +1,194 @@
+/* Grid */
+
+.content {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 11.4rem 1fr;
+
+  grid-template-areas:
+    "header header"
+    "left right";
+}
+
+/* Logo W */
+
+section .nSala {
+  grid-area: header, right;
+}
+
+#room {
+  grid-area: header;
+}
+#logo {
+  padding-left: 10rem;
+}
+/* header */
+.content {
+  max-width: min(112rem, 90%);
+}
+
+#room header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#room section .buttons {
+  display: flex;
+  padding-top: 5rem;
+}
+#copy {
+  width: 13rem;
+  text-align: center;
+}
+
+#room section .buttons .button:nth-child(1) {
+  margin-right: 0.8rem;
+  padding: 1.3rem 1.6rem;
+}
+#room section .buttons .button:nth-child(1) img {
+  margin-left: 1rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.nSala {
+  display: flex;
+  justify-content: flex-end;
+
+  width: min(30.3rem, 100%);
+}
+section h2 {
+  font-family: "Poppins", sans-serif;
+  color: var(--black);
+  font-size: clamp(20px 5vw 2.8rem);
+  margin-bottom: 2.4rem;
+}
+
+button,
+.button {
+  margin-left: 2rem;
+  width: 40%;
+  margin-bottom: 1rem;
+}
+
+/* bolas */
+
+.ball {
+  background: var(--blue);
+  position: fixed;
+  width: 21.2rem;
+  height: 21.2rem;
+  clip-path: circle();
+  opacity: 0.1;
+}
+.ball.top.left {
+  background: var(--grey-dark);
+  opacity: 5%;
+  width: 63.3rem;
+  height: 63.3rem;
+  top: -20rem;
+  left: -20rem;
+}
+
+.ball.top {
+  background: var(--grey-dark);
+  opacity: 0.1;
+  width: 63.3rem;
+  height: 63.3rem;
+  top: -45rem;
+  right: -35rem;
+}
+.ball.bottom {
+  z-index: -100;
+  width: 70rem;
+  height: 70rem;
+  right: -10rem;
+  bottom: -25rem;
+}
+/* Fim da header */
+
+/* Icone pja */
+
+#bg {
+  margin-left: 0;
+
+  grid-area: left;
+
+  background: url("../images/Logopja.svg") no-repeat top/contain;
+  background-position-x: -4rem;
+  width: 50.4rem;
+  height: 60.1rem;
+  margin-top: 10rem;
+}
+
+/* Envio de video */
+
+div .video.active {
+  visibility: visible;
+  opacity: 1;
+}
+div .video {
+  visibility: hidden;
+  opacity: 0;
+  grid-area: right;
+  padding-top: 12rem;
+}
+div #buton {
+  display: flex;
+  width: 50rem;
+  padding-left: 8.5rem;
+}
+
+.button.red {
+  height: 0;
+  margin-top: 1rem;
+  padding-right: 15rem;
+}
+.x,
+.button.red {
+  align-items: center;
+  display: flex;
+}
+.x {
+  padding-left: 11.4rem;
+  padding-top: 2rem;
+}
+.x p {
+  font-weight: bold;
+  opacity: 0.5;
+  font-size: 2rem;
+}
+.button.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* botao de anexar */
+div.anexar {
+  visibility: hidden;
+  opacity: 0;
+}
+div.anexar.active {
+  visibility: visible;
+  opacity: 1;
+  grid-area: right;
+  padding-top: 30rem;
+  padding-left: 10rem;
+}
+div.texto {
+  display: flex;
+  padding-bottom: 2rem;
+}
+div.texto > img {
+  width: 5rem;
+  padding-left: 1rem;
+}
+div.botao {
+  padding-left: 8rem;
+}
+
+input[type="file"] {
+  display: none;
+}

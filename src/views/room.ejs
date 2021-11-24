@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-08">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- View port -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/room.css">
+    <link rel="stylesheet" href="/styles/modal.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="../route.js"></script>
+    <title>Sala de video W Engenharia</title>
+</head>
+
+<body>
+    <!-- Logo -->
+    <div id="room" class="content">
+        <header>
+            <a href="/" id="logo">
+                <img src="/images/Logo.svg" alt="Rocket.Q Logo">
+            </a>
+        </header>
+
+        <section class="nSala">
+            <div class="buttons">
+                <h2>Nº da sala:</h2>
+                <div class="button outlined" id="copy" data-id="<%= roomId%>" >
+                    #<%= roomId%>
+                    <img src="/images/copy.svg" alt="Copiar numero da sala">
+                </div>
+            </div>
+        </section>
+
+        <!-- Icone pja -->
+
+        <div id="bg" class="content">
+            <div class="ball top"></div>
+            <div class="ball top left"></div>
+            <div class="ball bottom"></div>
+        </div>
+
+        <!-- Forme de entrada -->
+
+        <div class="video">
+            <div class="addvideo">
+                <img src="/images/video.svg" alt="">
+            </div>
+            <div class="x">
+                <p>Excluir anexo</p>
+                <div class="button red">
+                    <img src="/images/X.svg" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="anexar active">
+            <div class="texto">
+                <h2>Adicione seu video aqui</h2>
+                <img src="/images/upload-de-arquivo.svg" alt="upload-de-arquivo">
+            </div>
+            <div>
+                <label class="button" for="fileUpload">ANEXAR</label>
+                <input type="file" name="fileUpload" id="fileUpload">
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal-wrapper">
+        <div class="modal">
+            <h2>Seu vídeo foi enviada!</h2>
+            <p>Tem certeza que você deseja excluir esta pergunta</p>
+
+            <div class="buttons">
+                <button class="red">OK</button>
+            </div>
+            </form>
+        </div>
+    </div>
+    <script src="/backEndPJA/app.js"></script>
+</body>
+
+</html>

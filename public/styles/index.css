@@ -1,0 +1,92 @@
+/* Logo W */
+#logo {
+  margin-left: 20rem;
+}
+.content {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 11.4rem 1fr;
+
+  grid-template-areas:
+    "header header"
+    "left right";
+}
+.buttons {
+  grid-area: header;
+}
+
+/* Icone pja */
+
+#bg {
+  grid-area: left;
+
+  background: url("../images/Logopja.svg") no-repeat top/contain;
+  background-position-x: -4rem;
+  width: 50.4rem;
+  height: 60.1rem;
+  margin-top: 10rem;
+}
+
+/* Form de entrada */
+main {
+  padding-top: 20rem;
+}
+
+main .container {
+  width: min(30.3rem, 100%);
+}
+
+main h2 {
+  font-family: "Poppins", sans-serif;
+  color: var(--black);
+  font-size: clamp(20px 5vw 2.8rem);
+  margin-bottom: 2.4rem;
+}
+
+input {
+  outline: none;
+  border: 0.2rem solid var(--grey-blue);
+  padding: 0 1.6rem;
+}
+
+input,
+button,
+.button {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* bola */
+
+.ball {
+  background: var(--blue);
+  position: fixed;
+  width: 21.2rem;
+  height: 21.2rem;
+  clip-path: circle();
+  opacity: 0.1;
+}
+.ball.top.left {
+  background: var(--grey-dark);
+  opacity: 5%;
+  width: 63.3rem;
+  height: 63.3rem;
+  top: -20rem;
+  left: -20rem;
+}
+
+.ball.top {
+  background: var(--grey-dark);
+  opacity: 0.1;
+  width: 63.3rem;
+  height: 63.3rem;
+  top: -45rem;
+  right: -35rem;
+}
+.ball.bottom {
+  width: 70rem;
+  height: 70rem;
+  right: -10rem;
+  bottom: -25rem;
+  z-index: -1000;
+}

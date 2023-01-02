@@ -1,7 +1,6 @@
 {
   "name": "saladevideo",
   "version": "1.0.0",
-  "description": "",
   "main": "src/server.js",
   "scripts": {
     "start": "nodemon .",
@@ -25,5 +24,14 @@
   "devDependencies": {
     "nodemon": "^2.0.13",
     "sequelize-cli": "^6.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcosMOliveiradev/Coleta-de-Video.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MarcosMOliveiradev/Coleta-de-Video/issues"
+  },
+  "homepage": "https://github.com/MarcosMOliveiradev/Coleta-de-Video#readme",
+  "description": ""
 }

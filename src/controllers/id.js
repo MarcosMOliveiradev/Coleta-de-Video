@@ -4,9 +4,8 @@ const idSchema = new mongoose.Schema ({
   roomId: Number,
   pass: String,
   createdAt: {
-    type: Date,
-    default: Date.now,
-  },
+    type: Date
+  }
 });
 
 module.exports = mongoose.model("ID", idSchema)

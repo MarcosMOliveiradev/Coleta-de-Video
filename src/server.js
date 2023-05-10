@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 
 const server = express()
 
-mongoose.connect('mongodb://localhost:27017/upload', {
+mongoose.connect('mongodb://localhost:27017/teste', {
   useNewUrlParser: true,
 })
 
